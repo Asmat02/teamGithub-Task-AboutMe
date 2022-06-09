@@ -1,0 +1,267 @@
+{
+	"id": "f9bbd106-0060-41ae-b5a3-fe14e7b2d30d",
+	"name": "API Training: First API Test",
+	"timestamp": "2022-06-09T10:54:17.093Z",
+	"collection_id": "20964401-590f7262-5d05-4dcd-8160-40a2b89388da",
+	"folder_id": 0,
+	"environment_id": "20964401-189c18a0-eb86-44bf-a923-cb622d2a33e2",
+	"totalPass": 7,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "30f3cdab-606e-4331-a75b-02b4efecbba9",
+			"name": "Get Books all-books",
+			"url": "https://simple-books-api.glitch.me/books?type=",
+			"time": 350,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				350
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8097eb21-093f-429b-b49a-0815120ced41",
+			"name": "Get Books",
+			"url": "https://simple-books-api.glitch.me/books",
+			"time": 234,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has string": true,
+				"confirm test result value": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm test result value": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				234
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has string": true,
+					"confirm test result value": true
+				}
+			]
+		},
+		{
+			"id": "41583f11-5e5b-404c-b61e-049e69d739e0",
+			"name": "Get Books fiction",
+			"url": "https://simple-books-api.glitch.me/books?type=fiction",
+			"time": 332,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Search for a book name called Viscount Who Loved Me": true,
+				"The id number of a fiction book that available with the name The Midnight Library is ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Search for a book name called Viscount Who Loved Me": {
+					"pass": 1,
+					"fail": 0
+				},
+				"The id number of a fiction book that available with the name The Midnight Library is ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				332
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Search for a book name called Viscount Who Loved Me": true,
+					"The id number of a fiction book that available with the name The Midnight Library is ": true
+				}
+			]
+		},
+		{
+			"id": "28b4c2ba-b447-4662-8851-ecc68c2371d5",
+			"name": "Get a single book",
+			"url": "https://simple-books-api.glitch.me/books/5",
+			"time": 375,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				375
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "265d85ac-aabc-49b9-8223-68ab5cf727e5",
+			"name": "Get a single book 2",
+			"url": "https://simple-books-api.glitch.me/books/2",
+			"time": 311,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				311
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a8a5f9b5-0002-4be5-94d9-2d8664d7a7fb",
+			"name": "Place a book order",
+			"url": "https://simple-books-api.glitch.me/orders",
+			"time": 349,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				349
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "a65bd027-8535-4071-be7a-1323970ae64f",
+			"name": "Get all orders",
+			"url": "https://simple-books-api.glitch.me/orders",
+			"time": 347,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				347
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8c301dd7-b5cc-4d5d-9d55-0ac12c0e2fb1",
+			"name": "Get an order",
+			"url": "https://simple-books-api.glitch.me/orders/Mo15FdTyeaVVFa_iiGTvQ",
+			"time": 362,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				362
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "eaa0a0e5-6e84-4b18-974e-e6d74de80421",
+			"name": "Update an order",
+			"url": "https://simple-books-api.glitch.me/orders/bCA55KT8ZfC2J48FZwPOY/",
+			"time": 892,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				892
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3552,
+	"collection": {
+		"requests": [
+			{
+				"id": "30f3cdab-606e-4331-a75b-02b4efecbba9",
+				"method": "GET"
+			},
+			{
+				"id": "8097eb21-093f-429b-b49a-0815120ced41",
+				"method": "GET"
+			},
+			{
+				"id": "41583f11-5e5b-404c-b61e-049e69d739e0",
+				"method": "GET"
+			},
+			{
+				"id": "28b4c2ba-b447-4662-8851-ecc68c2371d5",
+				"method": "GET"
+			},
+			{
+				"id": "265d85ac-aabc-49b9-8223-68ab5cf727e5",
+				"method": "GET"
+			},
+			{
+				"id": "a8a5f9b5-0002-4be5-94d9-2d8664d7a7fb",
+				"method": "POST"
+			},
+			{
+				"id": "a65bd027-8535-4071-be7a-1323970ae64f",
+				"method": "GET"
+			},
+			{
+				"id": "8c301dd7-b5cc-4d5d-9d55-0ac12c0e2fb1",
+				"method": "GET"
+			},
+			{
+				"id": "eaa0a0e5-6e84-4b18-974e-e6d74de80421",
+				"method": "PATCH"
+			}
+		]
+	}
+}
